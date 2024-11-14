@@ -1,0 +1,479 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overscroll-behavior: none;
+  overflow: hidden;
+}
+
+img {
+  pointer-events: none;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.fade-out-end-battle {
+  animation: fadeOut 1.5s forwards;
+}
+
+.fade-in-end-battle {
+  animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.black-background {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.transition-scene {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 1000;
+}
+
+.transition-scene img {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Анімація для підйому */
+.tunnel-up-enter {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.tunnel-up-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1200ms, transform 1200ms;
+}
+.tunnel-up-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tunnel-up-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 1200ms, transform 1200ms;
+}
+
+/* Анімація для спуску */
+.tunnel-down-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.tunnel-down-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1200ms, transform 1200ms;
+}
+.tunnel-down-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tunnel-down-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1200ms, transform 1200ms;
+}
+
+@keyframes amulet-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+/* card flip animation */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 1.5s infinite; /* Пульсація повторюється кожні 1.5 секунди */
+}
+
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: -200px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+.shine-animation {
+  overflow: hidden;
+}
+
+.shine-animation:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1) 100%);
+  animation: shine 2s infinite;
+  pointer-events: none;
+}
+
+.amulet-appear {
+  animation: amulet-fade-in 1.5s ease-in-out;
+}
+
+.overlay-element {
+  position: relative;
+  pointer-events: none;
+  z-index: 51;
+}
+
+.video-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.video-transition.show {
+  opacity: 1;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rotating {
+  animation: rotate 1s linear infinite;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 0 #562502, -2px -2px 0 #562502, 2px -2px 0 #562502,
+    -2px 2px 0 #562502, 2px 0 0 #562502, -2px 0 0 #562502, 0 2px 0 #562502,
+    0 -2px 0 #562502;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.scrollable-element {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  will-change: transform;
+}
+
+@keyframes smoothMove {
+  to {
+    padding-bottom: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes smoothBack {
+  from {
+    padding-bottom: 100px;
+    opacity: 1;
+  }
+  to {
+    padding-bottom: 0;
+  }
+}
+
+@keyframes smoothRightMove {
+  to {
+    right: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes smoothRightBackMove {
+  from {
+    right: -100px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes disapearing {
+  from {
+    height: 250;
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes disapearing {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.header_right {
+  @apply border-l border-white border-opacity-10;
+}
+
+.html {
+  @apply h-auto overflow-hidden;
+
+  body {
+    @apply min-h-screen h-screen overflow-hidden isolate;
+  }
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background: black;
+  color: black;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+@layer components {
+  #ton-connect-button {
+    width: 100% !important;
+  }
+  #ton-connect-button button {
+    width: 100% !important;
+    justify-content: center !important;
+    border-radius: 12px;
+    height: 48px;
+    box-shadow: none;
+    background: linear-gradient(#5a60ff, #3f44c2);
+  }
+  #ton-connect-button svg {
+    display: none;
+  }
+}
+
+.go1487791704 {
+  overflow: hidden !important;
+  color: #fff !important;
+  text-align: center !important;
+  font-variant-numeric: lining-nums proportional-nums !important;
+  text-overflow: ellipsis !important;
+  text-shadow: 0px 1px 0px #000 !important;
+  -webkit-text-stroke-width: 1 !important;
+  -webkit-text-stroke-color: var(--darck, #19191b) !important;
+  font-family: "Sofia Sans Semi Condensed" !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 120% !important; /* 24px */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideUpDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.claim-animation {
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  animation: slideUpDownFade 4s forwards;
+  z-index: 55;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.room-container {
+  position: relative;
+  /* Додайте інші необхідні стилі, такі як відступи, розміри тощо */
+  /* Наприклад: */
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.text-outline-black {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@layer utilities {
+  .shadow-glow {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+  }
+}
+
+.custom-beveled-corners {
+  clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
+}
+.drop-shadow-yellow {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 0, 1));
+}
+.drop-shadow-selected {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 0, 1))
+          drop-shadow(0 0 10px rgba(255, 255, 0, 0.8))
+          drop-shadow(0 0 15px rgba(255, 255, 0, 0.6));
+}

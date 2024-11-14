@@ -1,0 +1,415 @@
+{
+  "language": "English",
+  "changeLanguage": "Change language",
+  "changeExchange": "Choose exchange",
+  "footer": {
+    "home": "Home",
+    "friends": "Friends",
+    "alliance": "Alliance",
+    "heroes": "Heroes",
+    "rewards": "Rewards",
+    "profile": "Profile",
+    "world": "World",
+    "bosses": "Bosses"
+  },
+  "chat": "Chat",
+  "save": "Save",
+  "next": "Tap to continue",
+  "retry": "Retry",
+  "deck": "Deck",
+  "shop": "Shop",
+  "maximumHealth": "Max HP",
+  "notEnoughBalance": "Not enough balance",
+  "get": "Get",
+  "level": "Lvl. {{lvl}}",
+  "loading": "Loading...",
+  "loadingDescription": "More info in official channels",
+  "profile": {
+    "name": "Profile",
+    "balance": "Balance",
+    "setting": "Setting",
+    "language": "Language",
+    "wallet": "Wallet is connected",
+    "connect": "Connect Wallet",
+    "connectTitle": "To get the reward, connect your TON wallet",
+    "walletinfo": {
+      "walletConnected": "Your TON wallet is connected",
+      "disconnectOrCopy": "You can disconnect it or copy wallet address"
+    },
+    "disconnect": "Disconnect Wallet",
+    "currentBalance": "Current balance",
+    "kitsune": "All time KITSU",
+    "exchange": "Exchange",
+    "deleteAccount": {
+      "name": "Delete account",
+      "areUSure": "Are you sure you want to delete your account?",
+      "AllYourData": "All your data, including game progress, achievements, and purchases, will be permanently deleted. This action cannot be undone.",
+      "delete": "Delete",
+      "cancel": "Cancel"
+    },
+    "gameSettings": {
+      "vibration": "Vibration",
+      "sound": "Effects",
+      "music": "Music"
+    }
+  },
+  "rewards": {
+    "mainTitle": "Invite your friends!",
+    "mainDescription": "You and your friend get bonuses.",
+    "titles": {
+      "commonFriend": "Invite {{count}} friends and earn {{reward}} $KITSU!",
+      "premiumFriend": "Invite {{count}} premium friends and earn {{reward}} $KITSU!",
+      "percentageReward": "When your friends get {{name}} - you also get {{percentage}}"
+    },
+    "description": {
+      "commonFriend": "All your friend will get {{reward}}",
+      "premiumFriend": "All your Premium friend will get {{reward}}"
+    },
+    "claim": "Claim"
+  },
+  "friends": {
+    "name": "Friends",
+    "invite": "Invite"
+  },
+  "dungeon": {
+    "pageName": "Dungeon",
+    "open": "Open",
+    "use": "Use",
+    "fight": "Fight",
+    "shop": {
+      "title": "Shop",
+      "description": "Shop with rare weapon and artifacts."
+    },
+    "bonfire": {
+      "title": "Bonfire",
+      "description": ""
+    },
+    "abyss": {
+      "title": "Abyss",
+      "description": ""
+    },
+    "elixir": {
+      "title": "Elixir",
+      "description": ""
+    },
+    "chest": {
+      "title": "Chest",
+      "description": ""
+    },
+    "forge": {
+      "title": "Smithy",
+      "description": ""
+    },
+    "tavern": {
+      "title": "Tavern",
+      "description": "Time to forget something!"
+    },
+    "remainingPages": "Remaining pages",
+    "zombie": "Skelet warrior",
+    "zombieDescription": "Clink-clank"
+  },
+  "tutorial": {
+    "btn1": "Seek",
+    "gotItem": "You got an item",
+    "item1": "Stone",
+    "item2": "Torch",
+    "item3": "Fire",
+    "btn2": "Light up",
+    "btn3": "Attack",
+    "endTurn": "End turn",
+    "enemyLines": "Your soul is MINE",
+    "reward": "Reward",
+    "modals": {
+      "empty": "Empty",
+      "bag": "Bag",
+      "myCards": "My Cards",
+      "bless": "Blessings"
+    },
+    "dialogues": {
+      "dialogue1": {
+        "person": "1",
+        "nextStep": "/tutorial/dungeon",
+        "phrases": [
+          {
+            "person": "",
+            "me": "It seems there's someone ahead..."
+          },
+          {
+            "person": "",
+            "me": "What are you doing here?"
+          },
+          {
+            "person": "My name is Lira. I got lost in these caves trying to find treasures.",
+            "me": "It seems I'm lost too."
+          },
+          {
+            "person": "There’s an exit ahead, but we need to defeat a monster.",
+            "me": "…"
+          },
+          {
+            "person": "Will you help me?",
+            "me": "Alright, let's go together. But be careful."
+          },
+          {
+            "person": "I'm sure we can handle it together.",
+            "me": "Move forward"
+          }
+        ]
+      },
+      "dialogue2": {
+        "person": "1",
+        "nextStep": "/battle",
+        "phrases": [
+          {
+            "person": "",
+            "me": "Phew, that wasn't easy. Good thing you were here."
+          },
+          {
+            "person": "Well done. Now we have everything we need.",
+            "me": "What do you mean?"
+          },
+          {
+            "person": "(laughing) Did you really think I was lost?",
+            "me": "I don’t understand…"
+          },
+          {
+            "person": "How naive. I needed someone to clear the monsters out of the way.",
+            "me": "What?! You used me!"
+          },
+          {
+            "person": "Of course. And now, farewell. I hope you're not too disappointed.",
+            "me": "…"
+          }
+        ]
+      },
+      "dialogue3": {
+        "person": "2",
+        "nextStep": "/",
+        "phrases": [
+          {
+            "person": "",
+            "me": "Where am I? Who are you?"
+          },
+          {
+            "person": "I am the Goddess Kitsune. I have resurrected you for a great mission.",
+            "me": "Why me?"
+          },
+          {
+            "person": "You were chosen for your wisdom and strength.",
+            "me": "Continued listen"
+          },
+          {
+            "person": "Our world is in ruins, and only you can restore its greatness.",
+            "me": "What must I do?"
+          },
+          {
+            "person": "Build a city, unite the survivors.",
+            "me": "I think it’s not all business."
+          },
+          {
+            "person": "Find ancient relics to awaken the sleeping powers of the world.",
+            "me": "It sounds like a difficult task, but I’m ready."
+          },
+          {
+            "person": "Don't forget: there are many enemies and secrets around.",
+            "me": "Thank you for the second chance. I will succeed."
+          }
+        ]
+      }
+    }
+  },
+  "effects": {
+    "descriptions": {
+      "defense": "Armor: Resist {{amount}} DMG.",
+      "triggeredByEnemiesAttackCard": "Secret: Trigger when the enemy uses an attack card.",
+      "doubleDamage": "Double Damage: Doubles the damage dealt.",
+      "resistDamage": "Fortitude: Reduces any received damage by 1.",
+      "poison": "Poison: Deals damage equal to the effect amount.",
+      "burning": "Burning: Removes and blocks removes armor.",
+      "weakness": "Weakness: Damage reduced by 50%.",
+      "stun": "Stun: Draw 1 less card next round.",
+      "bleeding": "Bleeding: Increases damage by 1 per effect.",
+      "cold": "Cold: Card costs in hand increased by 1.",
+      "returnDamage": "Trigger when the enemy uses an attack card. "
+    }
+  },
+  "farm": {
+    "upgrade": {
+      "requirements": "Lvl. {{lvl}}",
+      "title": "Upgrade",
+      "hp": "HP",
+      "damage": "Damage",
+      "gold": "Gold"
+    },
+    "tapToSkip": "Tap to skip",
+    "dialogues": {
+      "dialogue1": {
+        "person": "1",
+        "phrases": [
+          {
+            "person": "Monsters are ravaging the city, save the residents to get their help."
+          }
+        ]
+      },
+      "dialogue2": {
+        "person": "1",
+        "phrases": [
+          {
+            "person": ""
+          },
+          {
+            "person": "This is the nearest building, forward hero we need to hurry!"
+          }
+        ]
+      },
+      "dialogue3": {
+        "person": "1",
+        "phrases": [
+          {
+            "person": ""
+          },
+          {
+            "person": "There is a large monster on the upper floors, defeat it and the invaders will run away"
+          }
+        ]
+      },
+      "dialogue4": {
+        "person": "1",
+        "phrases": [
+          { "person": "" },
+          {
+            "person": "The monsters are escaping! The house is badly damaged, restore it!"
+          }
+        ]
+      },
+      "dialogue5": {
+        "person": "1",
+        "phrases": [{ "person": "" }]
+      },
+      "dialogue6": {
+        "person": "1",
+        "phrases": [{ "person": "" }]
+      },
+      "dialogue7": {
+        "person": "1",
+        "phrases": [
+          {
+            "person": "Go ahead hero, save this city from disaster, there are still residents deep inside, hurry!"
+          }
+        ]
+      }
+    }
+  },
+  "buildings": {
+    "titles": {
+      "1": "Kitsune Shrine idol",
+      "2": "Mine",
+      "3": "Temple",
+      "4": "Boss dungeons",
+      "5": "Tavern",
+      "6": "Training Field",
+      "7": "Big Temple"
+    },
+    "descriptions": {
+      "1": "Kitsune Shrine idol",
+      "2": "Mine",
+      "3": "Temple",
+      "4": "Boss dungeons",
+      "5": "Tavern",
+      "6": "Training Field",
+      "7": "Big Temple"
+    }
+  },
+  "timer": {
+    "day": "d",
+    "hour": "h",
+    "minute": "m",
+    "second": "s"
+  },
+  "quests": {
+    "name": "Quests",
+    "condition": {
+      "actionType": {
+        "0": "Earn",
+        "1": "Spend",
+        "2": "Open Lootbox",
+        "3": "Claim Resources",
+        "4": "Upgrade Hero Card"
+      },
+      "messagePart": "{{amount}} {{resource}}"
+    },
+    "resources": {
+      "0": "$KITSU",
+      "1": "Stone",
+      "2": "Experience",
+      "3": "None",
+      "4": "Keys"
+    }
+  },
+  "achievements": {
+    "name": "Achievements"
+  },
+  "bonusTypes": {
+    "0": "Dungeon Gold",
+    "1": "Dodge Enemy Damage",
+    "2": "Gain Max HP",
+    "3": "Armor Every Two Turns",
+    "4": "Card Update",
+    "5": "Max Energy",
+    "6": "Minus Damage First Turn",
+    "7": "Enemy Poison Start Battle",
+    "8": "Gain Max HP Dungeon",
+    "9": "Add Every Deal Damage",
+    "10": "Double First Damage",
+    "11": "Draw Cards",
+    "12": "Random ATK Card",
+    "13": "Random Artefact Card",
+    "14": "Additional DMG Every ATK"
+  },
+  "heroes": {
+    "0": "Samurai",
+    "summon": "Summon",
+    "recruitHeroes": "Summon Heroes",
+    "comingSooon": "COMING SOON",
+    "inDungeon": "Dungening",
+    "upgrade": "Upgrade",
+    "upgradeTier": "Upgrade Tier",
+    "heroInformation": "Hero Information",
+    "skillFullClaimed": "Skill Full Claimed",
+    "stats": { "mana": "Mana", "health": "Health", "cardsHeld": "Cards Held" }
+  },
+  "inventory": {
+    "name": "inventory",
+    "category": {
+      "0": "Heroes",
+      "1": "Items"
+    }
+  },
+  "heroShard": {
+    "0": "Shard"
+  },
+  "universalShard": {
+    "0": "Rare Hero Shard",
+    "1": "Epic Hero Shard",
+    "2": "Legendary Hero Shard",
+    "3": "None"
+  },
+  "timeBoosts": {
+    "0": "1m",
+    "1": "5m",
+    "2": "15m",
+    "3": "1h",
+    "4": "8h"
+  },
+  "lootBoxMap": {
+    "0": "Rare",
+    "1": "Epic",
+    "2": "Legendary",
+    "3": "Keys"
+  },
+  "error": "Error. Try again later.",
+  "battleGoBackTitle": "Are you sure you want to leave the fight?",
+  "battleGoBackDescription": "Your progress in this match will be lost.",
+  "confirm": "Confirm",
+  "cancel": "Cancel"
+}

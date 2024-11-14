@@ -1,0 +1,1 @@
+export { DeleteInfo } from "./DeleteMenu";
